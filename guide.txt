@@ -1,0 +1,15 @@
+Repo Link: https://github.com/nickkonic/codeigniter_Act.git
+
+Command Terminal:
+echo "# codeigniter_Act" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nickkonic/codeigniter_Act.git
+git push -u origin main
+
+Command Terminal Push:
+git remote add origin https://github.com/nickkonic/codeigniter_Act.git
+git branch -M main
+git push -u origin main
