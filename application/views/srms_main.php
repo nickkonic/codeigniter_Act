@@ -23,6 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<th>COURSE</th>
 			<th>YEARLEVEL</th>
 			<th>SEX</th>
+			<th>Action</th>
 		</tr>
 		<?php
 			$cnt = 1;
@@ -36,6 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				echo '<td>'.$student['course'].'</td>';
 				echo '<td>'.$student['yearlevel'].'</td>';
 				echo '<td>'.$student['sex'].'</td>';
+				echo '<td><a href="'.base_url('index.php/srms/delete_rec/'.$student['stud_id']).'"onclick="return confirm(\'Are you sure?\')">DELETE</a></td>';
 				echo '</tr>';
 				$cnt ++;
 			}

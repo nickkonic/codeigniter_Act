@@ -26,7 +26,14 @@ class Srms extends CI_Controller {
 		$this->load->view('srms_main', $data);
 	}
 
-	public function new_rec(){
+	/*public function new_rec(){
 		$this->load->view('smrs_new');
+	}*/
+
+	public function delete_rec(){
+		$id =$this->uri->segment(3);
+		$sql = "DELETE FROM tbl_student WHERE student_id='$id'";
+		$this->db->query($sql);
+		$this->index();
 	}
 }
